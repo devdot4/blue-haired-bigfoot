@@ -15,11 +15,11 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     acme.cert-manager.io/http01-edit-in-place: "true"
   hosts:
-    - host: prod-artemis.oracles.gift
+    - host: oracles.gift
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls:
     - secretName: prod-artemis-tls
       hosts:
-        - prod-artemis.oracles.gift
+        - oracles.gift
